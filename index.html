@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Graph Image Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <span class="badge">🚀 SEO Tool</span>
+        <h1>Open Graph Image Generator</h1>
+        <p>
+            Create beautiful social media preview images for Facebook, Twitter, LinkedIn and more.
+        </p>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="grid">
+
+        <!-- INPUT PANEL -->
+        <div class="card input-card">
+
+            <div class="field">
+                <label>Title</label>
+                <input type="text" id="title" placeholder="Enter your title">
+            </div>
+
+            <div class="field">
+                <label>Description</label>
+                <textarea id="description" placeholder="Enter description"></textarea>
+            </div>
+
+            <div class="field">
+                <label>Background Color</label>
+                <input type="color" id="bgColor" value="#2563eb">
+            </div>
+
+            <div class="field">
+                <label>Text Color</label>
+                <input type="color" id="textColor" value="#ffffff">
+            </div>
+
+            <button id="generateBtn">Generate OG Image</button>
+
+        </div>
+
+        <!-- PREVIEW PANEL -->
+        <div class="card preview-card">
+
+            <div class="og-preview" id="ogPreview">
+
+                <h2 id="previewTitle">Your Title Here</h2>
+
+                <p id="previewDesc">
+                    Your description will appear here...
+                </p>
+
+                <div class="footer">
+                    Open Graph Preview
+                </div>
+
+            </div>
+
+            <button id="downloadBtn">Download PNG</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
